@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -24,15 +23,10 @@ public class MainActivity extends AppCompatActivity {
         field = findViewById(R.id.field);
     }
 
-    public void Click(View view) {
+    public void click(View view) {
         Button button = (Button)view;
         field.setText(field.getText().toString() + button.getText().toString());
         exText += button.getText().toString();
-    }
-
-    public void engineeringClick(View view) {
-        LinearLayout engineering = findViewById(R.id.engineering);
-        engineering.setVisibility(View.VISIBLE);
     }
 
     public void signClick(View view) {
